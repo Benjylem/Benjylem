@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#131c2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1f2a3d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Left: name -->
+  <text x="70" y="128" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#e6edf3">Benjamin Lemoine</text>
+  <rect x="72" y="150" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="70" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#9da7b3">Développeur web full-stack · étudiant à Ynov</text>
+  <text x="70" y="240" font-family="Consolas, Menlo, monospace" font-size="18" fill="#58a6ff">React · TypeScript · Go · Python · PostgreSQL · Docker</text>
+
+  <!-- Right: terminal card -->
+  <g transform="translate(780,58)">
+    <rect width="350" height="184" rx="10" fill="#0b0f15" stroke="#30363d"/>
+    <rect width="350" height="30" rx="10" fill="#161b22"/>
+    <rect y="20" width="350" height="10" fill="#161b22"/>
+    <circle cx="20" cy="15" r="5.5" fill="#ff5f56"/>
+    <circle cx="38" cy="15" r="5.5" fill="#ffbd2e"/>
+    <circle cx="56" cy="15" r="5.5" fill="#27c93f"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="16">
+      <text x="20" y="64"><tspan fill="#3fb950">~</tspan><tspan fill="#e6edf3"> $ whoami</tspan></text>
+      <text x="20" y="90" fill="#9da7b3">benjylem</text>
+      <text x="20" y="122"><tspan fill="#3fb950">~</tspan><tspan fill="#e6edf3"> $ git push origin main</tspan></text>
+      <text x="20" y="148" fill="#9da7b3">→ toujours en train de build</text>
+      <text x="20" y="174"><tspan fill="#3fb950">~</tspan><tspan fill="#e6edf3"> $ </tspan><tspan fill="#58a6ff">▍</tspan></text>
+    </g>
+  </g>
+</svg>
